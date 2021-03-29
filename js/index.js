@@ -12,3 +12,7 @@ $(window).scroll(function(){
 		$('.header-wrapper').removeClass('active')
 	}
 })
+
+$('.mb-bars').click(function() {
+	$('.mbnavi-wrapper').toggleClass('active')
+})
