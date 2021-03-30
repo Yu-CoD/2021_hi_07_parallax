@@ -52,29 +52,28 @@ transition: transform .35s; transition-timing-function: linear;}
 
 /********************* about ************************/
 .about-wrapper {text-align: justify;}
-.about-wrap > div {width: 50%; float: left; padding: 1em; margin-bottom: 2em;}
-.about-wrap .photo-wrap {text-align: center;}
-.about-wrap .photo-wrap .name {margin-bottom: 2em;}
-.about-wrap .photo-wrap .photo {border-radius: 5px; overflow: hidden;}
-.about-wrap .photo-wrap .photo img {transition: all .5;}
-.about-wrap .photo-wrap .photo:hover > img {transform: scale(1.1);}
-.about-wrap .cont-wrap {margin-top: 3em;}
+.about-wrap {margin-bottom: 2em;}
+.about-wrap > div {width: 50%; float: left; padding: 1em;}
+.about-wrap > .photo-wrap {text-align: center;}
+.about-wrap > .photo-wrap > .name {margin-bottom: 2em;}
+.about-wrap > .photo-wrap > .photo {border-radius: 5px; overflow: hidden;}
+.about-wrap > .photo-wrap > .photo > img {transition: all .5s;}
+.about-wrap > .photo-wrap > .photo:hover > img {transform: scale(1.1);}
 
-.skill-wrapper {}
 .skill-wrapper > .title {text-align: center; font-size: 1.125em; margin-bottom: 2em;}
 .skill-wrapper > .skill-wrap > .skill {margin-bottom: 1.5em;}
 .skill-wrapper > .skill-wrap > .skill > .title {text-align: left; letter-spacing: 0.5em; margin-bottom: 0.75em;}
 .skill-wrapper > .skill-wrap > .skill > .bar-wrap {background-color: #eee; position: relative;}
 .skill-wrapper > .skill-wrap > .skill > .bar-wrap > .bar {background-color: #444; color: #f9f9f9; text-align: center; padding: 1.25em; animation-duration: 1s; animation-fill-mode: forwards;}
 
-.skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar {width: 95%;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar {width: 90%;}
 .skill-wrapper > .skill-wrap > .skill:nth-child(2) > .bar-wrap > .bar {width: 85%;}
-.skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar {width: 70%;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar {width: 75%;}
 
 .skill-wrapper > .skill-wrap > .skill > .bar-wrap > .bar > span{position: absolute; top: .5em;}
-.skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar > span {left: 45%;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar > span {left: 42.5%;}
 .skill-wrapper > .skill-wrap > .skill:nth-child(2) > .bar-wrap > .bar > span {left: 40%;}
-.skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar > span {left: 32.5%;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar > span {left: 35%;}
 
 .skill-wrapper > .skill-wrap > .skill:nth-child(1):hover > .bar-wrap > .bar {animation-name: bar1;}
 .skill-wrapper > .skill-wrap > .skill:nth-child(2):hover > .bar-wrap > .bar {animation-name: bar2;}
@@ -106,19 +105,19 @@ transition: transform .35s; transition-timing-function: linear;}
 .pf-wrapper > .pf-wrap > .pf > img {transition: all .35s;}
 .pf-wrapper > .pf-wrap > .pf:hover > img {opacity: .74; transform: scale(1.2);}
 
-.pf-wrapper > .bt-more {background-color: #eee; padding: .7em 1em;}
+.pf-wrapper > .bt-more {padding: 0.75em 1.25em; background-color: #eee; color: #111;}
+.pf-wrapper > .bt-more:hover {background-color: #bbb;}
 
 /********************* contact ************************/
-.contact-wrapper > .contact-outwrap > div {}
 .contact-wrapper > .contact-outwrap > .loc-inwrap {float: left; width: 30%}
-.contact-wrapper > .contact-outwrap > .loc-inwrap > img {border-radius: 5px; overflow: hidden;}
-.contact-wrapper > .contact-outwrap > .info-inwrap {float: left; width: 70%; padding-left: 3%; margin-bottom: 1em;}
+.contact-wrapper > .contact-outwrap > .loc-inwrap > img {border-radius: 5px;}
+.contact-wrapper > .contact-outwrap > .info-inwrap {width: 70%; float: right; padding-left: 3%;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap {margin-bottom: 1em;}
 .contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap > .info {font-size: 1.125em; margin-bottom: 0.25em;}
 .contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap > .info > .fa {width: 40px;}
-.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > .input-txt {float: left;} 
-.contact-wrapper > .contact-outwrap > .info-inwrap > p { margin-bottom: 1em;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .desc-wrap {margin-bottom: 1em;}
 
-.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input {padding: .75em; margin-bottom: .75em; border: 1px solid #ccc;} 
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input {padding: 0.625em; border: 1px solid #ccc; margin-bottom: 0.75em;}
 .contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input[name='name'] {float: left; width: 49%;} 
 .contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input[name='email'] {float: right; width: 49%;} 
 .contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input[name='msg'] {float: left; width: 100%;} 
@@ -134,7 +133,8 @@ transition: transform .35s; transition-timing-function: linear;}
 .footer-wrapper > .bt-top:hover {background-color: #bbb; padding: .7em 1em;}
 .footer-wrapper > .sns-wrap {text-align: center; margin-bottom: 1.5em;}
 .footer-wrapper > .sns-wrap > .sns {display: inline-block; font-size: 1.25em; letter-spacing: .325em;}
-.footer-wrapper > .copyright > a:hover {color: rgb(0, 179, 0); text-decoration: underline;}
+.footer-wrapper > .copyright > a:link {text-decoration: underline;} 
+.footer-wrapper > .copyright > a:hover {color: #0aac0a; text-decoration: underline;} 
 
 
 /********************* modal ************************/
@@ -170,7 +170,7 @@ transition: transform .35s; transition-timing-function: linear;}
 	.client-bar > .client-wrap > .client {width: 100%; border-bottom: 1px solid #555;}
 	.contact-wrapper > .contact-outwrap > .loc-inwrap {width: 100%}
 	.contact-wrapper > .contact-outwrap > .info-inwrap {width: 100%; padding-left: 0; padding-top: 3%;}
-	
+
 	.main-wrapper {background-attachment: unset;}
 	aside.title-bar {background-attachment: unset;}
 }
