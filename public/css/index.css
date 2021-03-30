@@ -23,20 +23,17 @@ aside.title-bar.contact-bar {background-image: url('../img/parallax3.jpg')}
 
 /********************* header ************************/
 .header-wrapper {color: #777; position: fixed; width: 100%; z-index: 9; line-height: 1;}
-.header-wrapper > .navi-wrapper {float: left;}
-.header-wrapper > .navi-wrapper > .navi {float: left;}
-.header-wrapper > .navi-wrapper > .navi:hover {background-color: #ccc; color: #111;}
-.header-wrapper > .navi-wrapper > .navi > a {padding: 1em;}
-.header-wrapper > .navi-wrapper > .navi > a .fa {margin-right: .25em;}
-
+.header-wrapper > .navi-wrap {float: left;}
+.header-wrapper > .navi-wrap > .navi {float: left;}
+.header-wrapper > .navi-wrap > .navi:hover {background-color: #ccc; color: #111;}
+.header-wrapper > .navi-wrap > .navi > a {padding: 1em;}
+.header-wrapper > .navi-wrap > .navi > a > .fa {margin-right: 0.25em;}
 .header-wrapper > .search {float: right; padding: 1em; cursor: pointer;}
 .header-wrapper > .search:hover {background-color: #f44336; color: #f9f9f9;}
+.header-wrapper > .mo-bars {float: right; padding: 1em; cursor: pointer; display: none;}
+.header-wrapper > .mo-bars:hover {background-color: #111; color: #f9f9f9; color: #f9f9f9;}
 
-.header-wrapper > .mb-bars {float: right; padding: 1em; cursor: pointer; display: none;}
-.header-wrapper > .mb-bars:hover {background-color: #111; color: #f9f9f9;}
-
-.header-wrapper.active {background-color: #f9f9f9; color: #111; box-shadow: 0 0 8px rgba(0,0,0,.5);
-transition: transform .35s; transition-timing-function: linear;}
+.header-wrapper.active {color: #111; background-color: #fff; box-shadow: 0 0 8px rgba(0, 0, 0, .5); transition: transform 0.5s; transition-timing-function: linear;}
 
 .mbnavi-wrapper {width: 100%; position: fixed; z-index: 8; background-color: #fff; top: 48px; display: none; box-shadow: 0 0 8px rgba(0,0,0,.5);}
 .mbnavi-wrapper > .mbnavi {padding: 1em;}
@@ -133,8 +130,7 @@ transition: transform .35s; transition-timing-function: linear;}
 .footer-wrapper > .bt-top:hover {background-color: #bbb; padding: .7em 1em;}
 .footer-wrapper > .sns-wrap {text-align: center; margin-bottom: 1.5em;}
 .footer-wrapper > .sns-wrap > .sns {display: inline-block; font-size: 1.25em; letter-spacing: .325em;}
-.footer-wrapper > .copyright > a:link {text-decoration: underline;} 
-.footer-wrapper > .copyright > a:hover {color: #0aac0a; text-decoration: underline;} 
+.footer-wrapper > .copyright > a:hover {color: rgb(0, 179, 0); text-decoration: underline;}
 
 
 /********************* modal ************************/
