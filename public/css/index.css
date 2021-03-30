@@ -166,12 +166,13 @@ transition: transform .35s; transition-timing-function: linear;}
 	.header-wrapper > .mb-bars {display: block;}
 	.mbnavi-wrapper.active {display: block;}
 
-	.main-wrapper {background-attachment: unset;}
-	aside.title-bar {background-attachment: unset;}
 	.about-wrap > div {width: 100%;}
 	.client-bar > .client-wrap > .client {width: 100%; border-bottom: 1px solid #555;}
 	.contact-wrapper > .contact-outwrap > .loc-inwrap {width: 100%}
-	.contact-wrapper > .contact-outwrap > .info-inwrap {width: 100%; padding-left: none; padding-top: 3%;}
+	.contact-wrapper > .contact-outwrap > .info-inwrap {width: 100%; padding-left: 0; padding-top: 3%;}
+	
+	.main-wrapper {background-attachment: unset;}
+	aside.title-bar {background-attachment: unset;}
 }
 
 @media (max-width: 576px) {
