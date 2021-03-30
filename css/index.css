@@ -4,12 +4,13 @@
 
 
 /********************* default ************************/
-html, body {font-family: 'Lato', sans-serif; height: 5000px; color: #777;}
-.wrapper {max-width: 960px; margin: auto;}
+html, body {font-family: 'Lato', sans-serif; height: 5000px; color: #777; line-height: 1.5;}
+.wrapper {max-width: 960px; margin: auto; border: 2px solid orange;}
 section.wrapper {padding: 5em 1em;}
 section.wrapper		  .title {color: #777; text-align: center;}
 section.wrapper > h2.title {font-size: 1.5em; margin-bottom: 1.25em;}
 section.wrapper > h3.title {font-style: italic; margin-bottom: 1.5em; line-height: 1.5;}
+section > p.content {line-height: 1.5;}
 
 aside.title-bar {font-size: 2em; letter-spacing: 0.325em; color: #f9f9f9; 
 								text-align: center; padding: 5em 0;
@@ -21,7 +22,7 @@ aside.title-bar.contact-bar {background-image: url('../img/parallax3.jpg')}
 
 
 /********************* header ************************/
-.header-wrapper {color: #777; position: fixed; width: 100%; z-index: 10;}
+.header-wrapper {color: #777; position: fixed; width: 100%; z-index: 10; line-height: 1;}
 .header-wrapper > .navi-wrapper {float: left;}
 .header-wrapper > .navi-wrapper > .navi {float: left;}
 .header-wrapper > .navi-wrapper > .navi:hover {background-color: #ccc; color: #111;}
@@ -49,8 +50,25 @@ transition: transform .35s;}
 
 
 /********************* about ************************/
-.about-wrapper {border: 1px solid pink;}
-.about-wrapper {}
+.about-wrapper {text-align: justify; border: 1px solid pink;}
+.about-wrap > div {width: 50%; float: left; padding: 1em; margin-bottom: 2em;}
+.about-wrap .photo-wrap {text-align: center;}
+.about-wrap .photo-wrap .name {margin-bottom: 2em;}
+.about-wrap .photo-wrap .photo {border-radius: 5px; overflow: hidden;}
+.about-wrap .photo-wrap .photo img {transition: all .5;}
+.about-wrap .photo-wrap .photo:hover > img {transform: scale(1.1);}
+.about-wrap .cont-wrap {margin-top: 3em;}
+
+.skill-wrapper {}
+.skill-wrapper > .title {text-align: center; font-size: 1.125; margin-bottom: 2em;}
+.skill-wrapper > .skill-wrap > .skill {margin-bottom: 1.5em;}
+.skill-wrapper > .skill-wrap > .skill > h5.title {text-align: left; letter-spacing: 0.5em; margin-bottom: 0.75em;}
+.skill-wrapper > .skill-wrap > .skill > .bar-wrap {background-color: #eee;}
+.skill-wrapper > .skill-wrap > .skill > .bar-wrap > .bar {background-color: #444; color: #f9f9f9; text-align: center; padding: .5em;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar {width: 90%}
+.skill-wrapper > .skill-wrap > .skill:nth-child(2) > .bar-wrap > .bar {width: 85%}
+.skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar {width: 70%}
+
 
 
 /********************* pf ************************/
