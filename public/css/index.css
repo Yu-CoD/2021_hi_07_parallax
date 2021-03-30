@@ -23,11 +23,11 @@ aside.title-bar.contact-bar {background-image: url('../img/parallax3.jpg')}
 
 /********************* header ************************/
 .header-wrapper {color: #777; position: fixed; width: 100%; z-index: 9; line-height: 1;}
-.header-wrapper > .navi-wrap {float: left;}
-.header-wrapper > .navi-wrap > .navi {float: left;}
-.header-wrapper > .navi-wrap > .navi:hover {background-color: #ccc; color: #111;}
-.header-wrapper > .navi-wrap > .navi > a {padding: 1em;}
-.header-wrapper > .navi-wrap > .navi > a > .fa {margin-right: 0.25em;}
+.header-wrapper > .navi-wrapper {float: left;}
+.header-wrapper > .navi-wrapper > .navi {float: left;}
+.header-wrapper > .navi-wrapper > .navi:hover {background-color: #ccc; color: #111;}
+.header-wrapper > .navi-wrapper > .navi > a {padding: 1em;}
+.header-wrapper > .navi-wrapper > .navi > a > .fa {margin-right: 0.25em;}
 .header-wrapper > .search {float: right; padding: 1em; cursor: pointer;}
 .header-wrapper > .search:hover {background-color: #f44336; color: #f9f9f9;}
 .header-wrapper > .mo-bars {float: right; padding: 1em; cursor: pointer; display: none;}
