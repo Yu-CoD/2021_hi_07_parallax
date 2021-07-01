@@ -44,5 +44,5 @@ $('.pf-wrap > .pf > img').click(function(){
 	$('.modal-wrapper .modal-wrap').css('transform')
 	$('.modal-wrapper .modal-img').attr('src', src)
 	$('.modal-wrapper .modal-title').text(desc)
-	$('.modal-wrapper .modal-wrap').css('transform', 'scale(1)')
+	$('.modal-wrapper .modal-wrap').css('transform', 'scale(1.5)')
 })
